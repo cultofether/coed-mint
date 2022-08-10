@@ -85,7 +85,7 @@ async function update_publicMint() {
         await contract.methods.PublicSalePaused().call().then(function (res2, err) {
             if ((res !== false) && (res2 !== true)) {
                 publicMint = true
-                max_count = 6
+                max_count = 2
                 mint_count = 1
                 $('#mint_count').html(mint_count);
             } else {
